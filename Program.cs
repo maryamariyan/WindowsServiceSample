@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 Trace.AutoFlush = true;
-using (var textWriterTraceListener = new TextWriterTraceListener(@"C:\CodeHub\logs\trace-logs.log"))
+using (var textWriterTraceListener = new TextWriterTraceListener(@"C:\logs\trace-logs.log"))
 {
     IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>
