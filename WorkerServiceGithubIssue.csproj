@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>exe</OutputType>
+    <PublishSingleFile>true</PublishSingleFile>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0-rc.2.21474.18" />
+	  <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0-rc.2.21474.18" />
+	  <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0-rc.2.21474.18" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.TraceSource" Version="6.0.0-rc.2.21474.18" />
+	  <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0-rc.2.21474.18" />
+  </ItemGroup>
+</Project>
